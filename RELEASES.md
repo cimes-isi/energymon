@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+* jetson-sensors: new implementation for NVIDIA Jetson systems with JetPack 5.x
+
 ### Fixed
 
 * jetson: some root cause errors like EACCES (Permission denied) are masked as ENODEV (No such device)
