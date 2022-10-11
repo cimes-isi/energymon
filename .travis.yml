@@ -16,14 +16,17 @@ matrix:
       arch: amd64
       compiler: clang
     # Different architectures, gcc only
+    # TODO: 2022-10-10: not working with jammy - silently falls back on bionic and fails (old cmake version)
     - os: linux
-      dist: jammy
+      dist: focal
       arch: arm64
+    # TODO: 2022-10-10: not working with jammy - silently falls back on bionic and fails (old cmake version)
     - os: linux
-      dist: jammy
+      dist: focal
       arch: ppc64le
+    # TODO: 2022-10-10: not working with jammy - silently falls back on focal
     - os: linux
-      dist: jammy
+      dist: focal
       arch: s390x
     # Other OS/dists
     - os: linux
